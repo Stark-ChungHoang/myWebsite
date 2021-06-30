@@ -1,7 +1,8 @@
 import React from 'react';
 import {animateScroll as scroll} from "react-scroll"
+import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import {FaFacebook,FaInstagram,FaYoutube,FaTwitter,FaLinkedin} from "react-icons/fa"
-import { FooterContainer, FooterLink, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights} from './FooterElements'
+import { ChungHoang, FooterContainer, FooterLink, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights} from './FooterElements'
 import {FooterLinksItems,SocialIconsLink} from "./FooterElements"
 
 function Footer() {
@@ -58,7 +59,9 @@ function Footer() {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo onClick = {toggleHome} to="/">dolla</SocialLogo>
+                        <ChungHoang>
+                            <SocialLogo onClick = {toggleHome} to="/">^</SocialLogo>
+                            </ChungHoang>
                         <WebsiteRights>dolla 2020 {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                                 <SocialIconsLink href="/" target="_blank" aria-label="Facebook">

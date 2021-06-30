@@ -1,4 +1,4 @@
-import React,  {useState } from 'react'
+import React,  {useState,useEffect } from 'react'
 
 import {IconContext} from "react-icons/lib";
 import { FaBars } from 'react-icons/fa';
@@ -10,10 +10,24 @@ function Navbar({toggle}) {
 
     const [scrollNav,setScrollNav] = useState(false)
 
-
+     
     const toggleHome = ()=> {
         scroll.scrollToTop();
     }
+    const changNav = ()=> {
+        if(window.scrollY > 80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+    useEffect(()=> {
+    //    if(window.scrollTo(80,0)){
+    //     setScrollNav(true)
+    //    }
+            window.addEventListener("scroll",changNav)
+      
+    },[])
     return (
         <>
         <IconContext.Provider value= {{color:"#fff"}}>

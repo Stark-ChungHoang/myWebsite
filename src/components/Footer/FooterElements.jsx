@@ -80,18 +80,32 @@ margin:40px auto 0 auto;
     flex-direction: column;
 }
 `
+export const ChungHoang = styled.div`
+display:flex;
+align-items: center;
+justify-content: center;
+background-color: green;
+width: 50px;
+height: 50px;
 
+border-radius: 50%;
+`
 export const SocialLogo = styled(Link)`
 color:white;
-justify-content: start;
+/* justify-content: center; */
 cursor: pointer;
 text-decoration:none;
-font-size:1.5rem;
-display: flex;
-align-items: center;
+font-size:3rem;
+/* display: flex; */
+transform: translateY(20%);
+
+/* align-items: center; */
 margin-bottom:16px;
 font-weight:bold;
-
+&:hover {
+    transform: translateY(-0.05px);
+    transition: 400ms;
+}
 
 `
 
