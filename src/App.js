@@ -7,13 +7,13 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <Navbar />
-    <Switch>
-       
-        <Route extra path ="/signin" component = {SigninPage} />
-         <Route extra  path ="/" component = {Home} />
-    </Switch>
-</Router>
+           <Navbar />
+          <Switch>
+            
+              <Route extra path ="/signin" component = {SigninPage} />
+              <Route extra  path ="/" component = {Home} />
+          </Switch>
+  </Router>
    
   );
 }
